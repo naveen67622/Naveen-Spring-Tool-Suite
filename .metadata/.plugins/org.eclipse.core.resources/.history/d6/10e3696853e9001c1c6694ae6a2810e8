@@ -1,0 +1,97 @@
+package com.zensar.service;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.zensar.bean.Customer;
+import com.zensar.bean.TicketBooking;
+import com.zensar.repository.IBookingRepository;
+import com.zensar.repository.ICustomerRepository;
+import com.zensar.repository.IMovieRepository;
+import com.zensar.repository.ISeatRepository;
+import com.zensar.repository.IShowRepository;
+import com.zensar.repository.IUserRepository;
+
+@Service
+public class IBookingServiceImpl implements IBookingService   {
+	@Autowired
+	private IBookingRepository bookingRepository;
+	
+	@Autowired
+	private ICustomerRepository CustomerRepository;
+	
+	@Autowired
+	private IMovieRepository movieRepository;
+	
+	@Autowired
+	private ISeatRepository  seatRepositiry;
+	
+	@Autowired
+	private IShowRepository showRepository;
+	
+	@Autowired
+	private IUserRepository useUserRepository;
+	
+	@Override
+	public TicketBooking addBooking(TicketBooking booking, Integer customerId, Integer showId) {
+		Customer customer = new Customer();
+		if(showId!=null) {
+			show=showRepository.findById(showId).get();
+			show.setBooking(booking);
+			booking.setShow(show);
+			
+		}
+		bookingRepository.saveAndFlush(booking);
+		showRepository.saveAndFlush(show);
+		return bookingRepository.findById(booking.getTransactionId()).get();
+	}
+
+	@Override
+	public TicketBooking updateBooking(TicketBooking booking) {
+		bookingRepository.saveAndFlush(show);
+		return bookingRepository.getOne(booking.getTransactionId());
+	}
+
+	@Override
+	public TicketBooking cancelBooking(int bookingId) {
+		TicketBooking b=bookingRepository.getOne(bookingId);
+		return b;
+	}
+
+	@Override
+	public List<TicketBooking> showAllBookings(int movieId) {
+		List<TicketBooking> bk= query.getAllByMovieId(movieId);
+		return bk;
+	}
+
+	@Override
+	public List<TicketBooking> showAllBooking(LocalDate bookingdate) {
+		List<TicketBooking> bkList= new ArrayList<>();
+		for(TicketBooking booking : bookingRepository.findAll()) {
+			if(booking.getBookingDate() !=null && booking.getBookingDate().isEqual(bookingdate)) {
+			bkList.add(booking);
+		}
+		}
+		return bkList;
+	}
+
+	@Override
+	public List<TicketBooking> showBookingList(int showId) {
+		List<TicketBooking> bk =bookingRepository.findAll();
+		
+		return bk;
+	}
+
+	@Override
+	public double calculateTotalCost(int bookingId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}

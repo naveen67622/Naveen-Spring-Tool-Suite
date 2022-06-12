@@ -1,0 +1,13 @@
+package com.zensar.displayservice.feign.client;
+
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+@EnableDiscoveryClient
+@FeignClient(value = "messageservice", url ="http://localhost:7071/api/message")// Hard coding of url is not working 
+public interface MessageFeignClient {
+
+	@GetMapping
+	public String callGenetareMessage();
+
+}

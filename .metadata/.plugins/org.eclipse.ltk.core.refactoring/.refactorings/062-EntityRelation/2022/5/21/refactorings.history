@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;062-EntityRelation&apos;&#x0D;&#x0A;- Original project: &apos;062-EntityRelation&apos;&#x0D;&#x0A;- Original element: &apos;062-EntityRelation/src/src&apos;&#x0D;&#x0A;- Delete subpackages" description="Delete element" element1="/src&lt;src.com.zensar.util" element2="/src&lt;src.com.zensar.ui" element3="/src&lt;src.com.zensar.bean.pack2" element4="/src&lt;src.com.zensar.bean.pack1" element5="/src&lt;src.com.zensar.bean" element6="/src&lt;src.com.zensar" element7="/src&lt;src.com" element8="/src&lt;src" elements="8" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1653118708941" subPackages="true" version="1.0"/>
+</session>

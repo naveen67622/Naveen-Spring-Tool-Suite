@@ -1,0 +1,11 @@
+package com.zensar.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class OlxAdvertiseService {
+	@Autowired
+	OlxUserAdvertisesDAO dao;
+	public Advertises advertises
+
+
+}

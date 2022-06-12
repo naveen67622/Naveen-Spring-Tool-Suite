@@ -1,0 +1,6 @@
+package com.zensar.db;
+
+
+public interface ICustomerRepository {
+
+}

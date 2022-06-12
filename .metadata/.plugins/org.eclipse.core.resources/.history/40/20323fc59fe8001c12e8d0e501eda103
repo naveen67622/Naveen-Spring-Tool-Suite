@@ -1,0 +1,5 @@
+package com.zensar.repositiry;
+
+public interface IBookingRepository {
+
+}

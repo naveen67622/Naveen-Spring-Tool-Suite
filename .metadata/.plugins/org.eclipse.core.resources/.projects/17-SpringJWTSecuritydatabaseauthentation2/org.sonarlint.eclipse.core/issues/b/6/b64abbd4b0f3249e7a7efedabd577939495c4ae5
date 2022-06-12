@@ -1,0 +1,10 @@
+
+n
+java:S2583"DChange this condition so that it does not always evaluate to "false"(êã¸‚üÿÿÿÿH“ARMAJORZBUG
+Y	java:S108")Either remove or fill this block of code.(êã¸‚üÿÿÿÿH–ARMAJORZ
+CODE_SMELL
+T	java:S108")Either remove or fill this block of code.(”ı¾H—ARMAJORZ
+CODE_SMELL
+h
+java:S1172"<Remove these unused method parameters "request", "response".(ãÒÄµH˜ARMAJORZ
+CODE_SMELL

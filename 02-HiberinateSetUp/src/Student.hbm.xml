@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.jboss.org/dtd/hibernate/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.zensar.bean.Student" table="Student">
+		<id name="studentId" column="s_id">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="name" column="s_name"></property>
+		<property name="subject" column="s_subject"></property>
+		<property name="marks" column="s_marks"></property>
+		<property name="grade" column="s_grade"></property>
+	</class>
+</hibernate-mapping>

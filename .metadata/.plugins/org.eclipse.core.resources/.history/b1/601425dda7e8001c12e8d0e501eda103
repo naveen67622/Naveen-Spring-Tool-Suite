@@ -1,0 +1,8 @@
+package com.zensar.repositiry;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IBookingRepository {
+
+}

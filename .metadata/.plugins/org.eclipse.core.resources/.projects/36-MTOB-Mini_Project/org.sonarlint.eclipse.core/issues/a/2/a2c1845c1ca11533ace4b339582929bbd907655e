@@ -1,0 +1,9 @@
+
+^
+java:S1168#"+Return an empty collection instead of null.(╔╧О█8М─ш▐∙0HХ?RMAJORZ
+CODE_SMELL
+i
+java:S1068"6Remove this unused "customerRepository" private field.(©Вой8М─ш▐∙0HЛ?RMAJORZ
+CODE_SMELL
+┐	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(╣П╝З8М─ш▐∙0HЦ?RMINORZ
+CODE_SMELL

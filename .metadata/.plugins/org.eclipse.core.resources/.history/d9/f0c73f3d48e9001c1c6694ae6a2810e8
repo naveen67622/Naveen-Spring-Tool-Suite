@@ -1,0 +1,14 @@
+package com.zensar.service;
+
+import com.zensar.bean.TicketBooking;
+
+public interface IBookingService{
+	public TicketBooking  addBooking(TicketBooking booking,Integer customerId,Integer showId );
+	public TicketBooking updateBooking(TicketBooking booking);
+	public TicketBooking cancelBooking(int bookingId);
+	public List<TicketBooking> int ()
+	
+	
+	
+
+}

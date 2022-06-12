@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Built-By: NK67622
+Build-Jdk: 17
+Created-By: Maven Integration for Eclipse
+

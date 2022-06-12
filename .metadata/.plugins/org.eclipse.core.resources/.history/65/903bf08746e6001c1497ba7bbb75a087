@@ -1,0 +1,6 @@
+Docker
+
+1.Docker is a container management service
+2.The whole idea of Docker is to to be able to ship applications along with their environment into images.
+ Which then can be run anywhere.(Even on Cloud platform e.g AWS)
+3.Docker image :-In docker image acts as set of instructions to build container.(Like template)
